@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "ruz-calendar-back"
+version = "0.1.0"
+description = "Backend for RUZ calendar service"
+authors = ["leventium <leventium@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "ruz_calendar_back"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.95.1"
+uvicorn = "^0.22.0"
+httpx = "^0.24.0"
+icalendar = "^5.0.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
